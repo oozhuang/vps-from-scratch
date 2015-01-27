@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+
+if [[ $# -lt 2 ]]; then
+	echo "usage: $0 username password">&2; 
+	exit -1
+fi
+
 CUR_DIR=$(cd `dirname $0`;pwd)
 cd $CUR_DIR
 set -e

@@ -16,7 +16,7 @@ set -e
 
 apt-get install vim --force-yes
 
-cp -R $RESRC/vim-suite/* /home/$1/
+cp -R $RESRC/vim-suite/.vim* /home/$1/
 
 chown -R $1:$1 /home/$1/.vim*
 
